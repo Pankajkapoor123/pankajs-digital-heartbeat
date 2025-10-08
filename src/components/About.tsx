@@ -37,17 +37,7 @@ const About = () => {
               stay curious, and always ship with love</span> ✨
             </p>
 
-            {/* Quote */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-xl border border-primary/20">
-              <div className="flex items-center gap-3 mb-3">
-                <Code2 className="h-6 w-6 text-primary" />
-                <Coffee className="h-6 w-6 text-secondary" />
-                <Sparkles className="h-6 w-6 text-accent" />
-              </div>
-              <p className="text-xl font-semibold text-gradient italic">
-                "Code, coffee, and curiosity — that's me ☕💻"
-              </p>
-            </div>
+          
           </div>
         </div>
       </div>
