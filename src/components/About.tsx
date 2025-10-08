@@ -36,7 +36,7 @@ const About = () => {
               next project. My approach is simple: <span className="text-accent font-semibold">write clean code,
               stay curious, and always ship with love</span> ✨
             </p>
-
+ 
           
           </div>
         </div>
