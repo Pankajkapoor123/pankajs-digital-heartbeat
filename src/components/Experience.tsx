@@ -4,35 +4,27 @@ const Experience = () => {
   const experiences = [
     {
       role: ".NET Full Stack Developer",
-      company: "Healthcare Tech Solutions",
-      period: "2024 - Present",
-      description: "Developing enterprise-level healthcare applications using .NET Core, Angular, and PostgreSQL. Focus on building scalable, secure systems with modern architecture patterns.",
+      company: "Coretegra Technologies Pvt Ltd",
+      period: "April 2024 - Present",
+      location: "Zirakpur, Punjab",
+      description: "Developing enterprise healthcare and inventory management systems using ASP.NET MVC, .NET Core, Angular, and SQL Server. Leading multiple projects with focus on automation, scalability, and ABHA compliance.",
       achievements: [
-        "Designed and developed Hospital Management System (HIMS) with complete patient, staff, and lab modules",
-        "Built AI-based health app (SNEVVA) with symptom checker and health analysis features",
-        "Implemented JWT authentication and role-based access control across multiple projects",
+        "Developed MIMS using ASP.NET MVC and .NET Core with SQL Server, automating inventory tracking workflows and reducing manual errors",
+        "Built comprehensive HIMS with .NET Core backend and Angular frontend, managing patient records, prescriptions, and staff operations",
+        "Integrated ABHA-compliant solutions (M1, M2, M3) for efficient hospital workflows and inter-department communication",
+        "Developed backend for SNEVVA healthcare app with REST APIs, AWS S3, CloudFront, and SQS for event-driven processing",
       ],
     },
     {
-      role: "Full-Stack Developer",
-      company: "Enterprise Solutions",
-      period: "2023 - 2024",
-      description: "Developed CRM platform and portfolio websites with focus on clean code and user experience. Worked extensively with .NET Core backend and Angular frontend.",
+      role: ".NET Full Stack Trainee",
+      company: "CSInfotech",
+      period: "September 2023 - March 2024",
+      location: "Chandigarh",
+      description: "Trained in full-stack development with ASP.NET Core MVC, Entity Framework, and Angular. Built e-commerce platforms and information portals with focus on performance optimization and user experience.",
       achievements: [
-        "Created role-based CRM system for managing users, leads, and analytics",
-        "Built responsive portfolio websites with modern UI/UX principles",
-        "Integrated RESTful APIs and SOAP web services for seamless data flow",
-      ],
-    },
-    {
-      role: "Backend Developer",
-      company: "Healthcare Projects",
-      period: "2023",
-      description: "Specialized in healthcare domain projects with emphasis on NDHM/ABHA integration and secure data handling. Worked with Entity Framework Core and PostgreSQL.",
-      achievements: [
-        "Successfully integrated NDHM/ABHA APIs for healthcare data exchange",
-        "Implemented encryption and secure authentication mechanisms",
-        "Optimized database queries and improved application performance",
+        "Developed E-commerce platform using ASP.NET Core MVC and Entity Framework with payment gateway integration",
+        "Optimized database queries, improving load times and reducing server load significantly",
+        "Created National Park Information Portal with ASP.NET Core and Angular, featuring search functionality and interactive maps",
       ],
     },
   ];
@@ -81,10 +73,15 @@ const Experience = () => {
 
                       {/* Role & Company */}
                       <h3 className="text-2xl font-bold mb-1">{exp.role}</h3>
-                      <div className="flex items-center gap-2 text-muted-foreground mb-4">
+                      <div className="flex items-center gap-2 text-muted-foreground mb-2">
                         <Briefcase className="h-4 w-4" />
                         <span>{exp.company}</span>
                       </div>
+                      {exp.location && (
+                        <div className="text-sm text-muted-foreground mb-4">
+                          📍 {exp.location}
+                        </div>
+                      )}
 
                       {/* Description */}
                       <p className="text-muted-foreground mb-4 leading-relaxed">
