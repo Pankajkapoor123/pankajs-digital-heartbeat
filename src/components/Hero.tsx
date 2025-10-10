@@ -48,7 +48,7 @@ const Hero = () => {
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Designing and developing <span className="text-primary font-semibold">scalable web applications</span> with 
-            .NET Core, Angular, and PostgreSQL.
+            .NET Core, Angular, and SqlServer.
           </p>
 
           {/* Location & Stats */}
@@ -59,7 +59,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">💼</span>
-              <span>1 Year Experience</span>
+              <span>1.6+ Year Experience</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎓</span>

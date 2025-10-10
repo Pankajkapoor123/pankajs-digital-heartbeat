@@ -4,40 +4,34 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
+      title: "Medicine Inventory Management System (MIMS)",
+      description: "Enterprise inventory management system built with ASP.NET MVC and .NET Core. Features automated tracking workflows, multi-level approval processes, and role-based access controls. Uses SQL Server and Entity Framework Core for data integrity.",
+      tech: ["ASP.NET MVC", ".NET Core", "SQL Server", "Entity Framework"],
+      gradient: "from-green-500 to-emerald-500",
+      icon: "/images/medicine-icon.png", // path to your image
+    },
+    {
       title: "Hospital Management System (HIMS)",
       description: "Comprehensive hospital management system with .NET Core backend and Angular frontend. Handles patient records, prescriptions, vitals, diagnosis, and staff management. Features ABHA-compliant solutions (M1, M2, M3) for efficient workflows and inter-department communication.",
       tech: [".NET Core", "Angular", "Entity Framework", "ABHA API"],
       gradient: "from-blue-500 to-cyan-500",
-      icon: "🏥",
+      icon: "/images/hospital-icon.png", // path to your image
     },
     {
       title: "SNEVVA (Healthcare Application)",
       description: "AI-assisted healthcare app with .NET Core backend and REST APIs. Integrated AWS S3 for secure report storage and CloudFront for content delivery. Event-driven processing with SQS for notifications, ensuring scalability and security.",
       tech: [".NET Core", "REST APIs", "AWS S3", "SQS"],
       gradient: "from-purple-500 to-pink-500",
-      icon: "🤖",
-    },
-    {
-      title: "Medicine Inventory Management System (MIMS)",
-      description: "Enterprise inventory management system built with ASP.NET MVC and .NET Core. Features automated tracking workflows, multi-level approval processes, and role-based access controls. Uses SQL Server and Entity Framework Core for data integrity.",
-      tech: ["ASP.NET MVC", ".NET Core", "SQL Server", "Entity Framework"],
-      gradient: "from-green-500 to-emerald-500",
-      icon: "💊",
+      icon: "/images/ai-healthcare-icon.png", // path to your image
     },
     {
       title: "E-commerce Platform",
       description: "Full-featured e-commerce website using ASP.NET Core MVC and Entity Framework. Integrated payment gateways, product management, user authentication, and order management with optimized database queries for improved performance.",
       tech: ["ASP.NET Core", "MVC", "Entity Framework", "Payment Gateway"],
       gradient: "from-orange-500 to-red-500",
-      icon: "🛒",
+      icon: "/images/ecommerce-icon.png", // path to your image
     },
-    {
-      title: "National Park Information Portal",
-      description: "Web portal providing comprehensive information about national parks using ASP.NET Core and Angular. Features REST APIs for park data, search functionality, and interactive maps for enhanced user interaction.",
-      tech: ["ASP.NET Core", "Angular", "REST APIs", "Maps API"],
-      gradient: "from-teal-500 to-cyan-500",
-      icon: "🌲",
-    },
+
   ];
 
   return (
@@ -66,9 +60,11 @@ const Projects = () => {
                 {/* Project Header */}
                 <div className={`relative h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}>
                   <div className="absolute inset-0 bg-black/20" />
-                  <span className="relative text-8xl group-hover:scale-110 transition-transform duration-300">
-                    {project.icon}
-                  </span>
+                  <img
+                    src={project.icon}
+                    alt={project.title}
+                    className="relative text-8xl group-hover:scale-110 transition-transform duration-300 max-w-full max-h-full object-contain"
+                  />
                   
                   {/* Shine effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
@@ -94,25 +90,6 @@ const Projects = () => {
                         {tech}
                       </span>
                     ))}
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3 pt-2">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 border-primary/50 hover:bg-primary/10 hover:border-primary"
-                    >
-                      <Github className="mr-2 h-4 w-4" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="flex-1 bg-gradient-to-r from-primary to-secondary hover:opacity-90"
-                    >
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Demo
-                    </Button>
                   </div>
                 </div>
               </div>
