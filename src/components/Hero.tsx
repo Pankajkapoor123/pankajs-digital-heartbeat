@@ -42,12 +42,13 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-bold">
               I'm <span className="text-gradient">Pankaj Kumar</span>
             </h1>
+            <p className="text-2xl md:text-3xl text-primary font-semibold">.NET Full Stack Developer</p>
           </div>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            I build <span className="text-primary font-semibold">sleek, scalable apps</span> that actually work.
-            Full-stack developer specializing in .NET Core & Angular.
+            Designing and developing <span className="text-primary font-semibold">scalable web applications</span> with 
+            .NET Core, Angular, and PostgreSQL.
           </p>
 
           {/* Location & Stats */}
@@ -58,11 +59,11 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">💼</span>
-              <span>1+ Year Experience</span>
+              <span>1 Year Experience</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎓</span>
-              <span>BCA from LPU</span>
+              <span>Pursuing BCA from LPU</span>
             </div>
           </div>
 

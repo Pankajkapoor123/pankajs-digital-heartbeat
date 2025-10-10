@@ -16,28 +16,27 @@ const About = () => {
           {/* Content */}
           <div className="bg-card border border-border rounded-2xl p-8 md:p-12 space-y-6 card-hover">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Hey! I'm a <span className="text-primary font-semibold">24-year-old software developer</span> from
-              Zirakpur, India, with a genuine passion for building things that make a difference. I've spent
-              the past year working with <span className="text-secondary font-semibold">C# (.NET Core)</span>,{" "}
+              I am a passionate <span className="text-primary font-semibold">.NET Full Stack Developer</span> with 
+              hands-on experience in designing and developing scalable web applications using{" "}
+              <span className="text-secondary font-semibold">.NET Core</span>,{" "}
+              <span className="text-secondary font-semibold">C#</span>,{" "}
               <span className="text-secondary font-semibold">Angular</span>, and{" "}
-              <span className="text-secondary font-semibold">PostgreSQL</span> — crafting applications that
-              are not just functional but also delightful to use.
+              <span className="text-secondary font-semibold">PostgreSQL</span>. I focus on writing clean, 
+              efficient code and building reliable systems with secure APIs and modern front-end architecture.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I graduated with a <span className="text-primary font-semibold">BCA from LPU</span>, but my
-              real education has been in the trenches — building healthcare systems, hospital management
-              platforms, and AI-powered health apps. I love the challenge of turning complex problems into
-              clean, scalable solutions.
+              I hold a <span className="text-primary font-semibold">Diploma in Computer</span> and am currently 
+              pursuing my <span className="text-primary font-semibold">BCA from LPU</span> (Lovely Professional University). 
+              My journey in software development has been driven by building impactful solutions in healthcare and 
+              enterprise domains.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new tech, sipping coffee, and dreaming up the
-              next project. My approach is simple: <span className="text-accent font-semibold">write clean code,
-              stay curious, and always ship with love</span> ✨
+              My goal is to work on <span className="text-accent font-semibold">scalable and impactful full-stack 
+              solutions</span> that solve real-world problems. I believe in continuous learning and staying updated 
+              with the latest technologies to deliver the best results.
             </p>
- 
-          
           </div>
         </div>
       </div>

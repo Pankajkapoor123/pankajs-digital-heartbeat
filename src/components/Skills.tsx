@@ -4,10 +4,12 @@ const Skills = () => {
     { name: "C#", icon: "🔷", color: "from-blue-500 to-cyan-500" },
     { name: "Angular", icon: "🅰️", color: "from-red-500 to-pink-500" },
     { name: "PostgreSQL", icon: "🐘", color: "from-blue-400 to-blue-600" },
-    { name: "REST APIs", icon: "🔌", color: "from-green-500 to-emerald-500" },
-    { name: "Git", icon: "🔀", color: "from-orange-500 to-red-500" },
     { name: "TypeScript", icon: "📘", color: "from-blue-600 to-indigo-600" },
-    { name: "HTML/CSS", icon: "🎨", color: "from-pink-500 to-purple-500" },
+    { name: "Entity Framework", icon: "🔗", color: "from-purple-600 to-indigo-600" },
+    { name: "REST APIs", icon: "🔌", color: "from-green-500 to-emerald-500" },
+    { name: "GitHub", icon: "🔀", color: "from-orange-500 to-red-500" },
+    { name: "Visual Studio", icon: "💻", color: "from-indigo-500 to-purple-500" },
+    { name: "Postman", icon: "📮", color: "from-orange-400 to-orange-600" },
   ];
 
   return (
@@ -61,7 +63,7 @@ const Skills = () => {
             <p className="text-muted-foreground">
               Also familiar with:{" "}
               <span className="text-primary font-semibold">
-                Entity Framework, Swagger, JWT, RxJS, Tailwind CSS
+                ASP.NET MVC, SQL Server, JWT Authentication, SOAP Web Services, Role-based Access, ABHA/NDHM API Integration
               </span>
             </p>
           </div>

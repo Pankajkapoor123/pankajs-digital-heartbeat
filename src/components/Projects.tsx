@@ -4,32 +4,32 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "SNEVVA",
-      description: "AI-based health app providing health insights, symptom checker, and lab report management with intelligent diagnostics.",
-      tech: [".NET Core", "Angular", "PostgreSQL", "AI/ML"],
+      title: "Hospital Management System (HIMS)",
+      description: "Comprehensive healthcare solution built with .NET Core and Angular. Features bed management, lab systems, patient and staff modules, doctor assignment, and NDHM/ABHA integration for seamless healthcare operations.",
+      tech: [".NET Core", "Angular", "PostgreSQL", "NDHM API"],
       gradient: "from-blue-500 to-cyan-500",
       icon: "🏥",
     },
     {
-      title: "MIMS",
-      description: "Medical Information Management System for hospitals - complete lab and patient management with role-based access and reporting.",
-      tech: [".NET Core", "Angular", "PostgreSQL", "REST APIs"],
+      title: "AI-based Health App (SNEVVA)",
+      description: "Intelligent health application featuring symptom checker, comprehensive health history analysis, and AI-powered lab report guidance to provide actionable health insights.",
+      tech: [".NET Core", "Angular", "AI/ML", "PostgreSQL"],
       gradient: "from-purple-500 to-pink-500",
+      icon: "🤖",
+    },
+    {
+      title: "CRM System",
+      description: "Enterprise-grade Customer Relationship Management platform with role-based access control. Built with Angular frontend and .NET Core backend for efficient user, lead, and analytics management.",
+      tech: ["C#", ".NET Core", "Angular", "PostgreSQL"],
+      gradient: "from-green-500 to-emerald-500",
       icon: "📊",
     },
     {
-      title: "HMS",
-      description: "Comprehensive Hospital Management System including bed management, appointments, staff modules, and patient records.",
-      tech: ["C#", "Angular", "PostgreSQL", "Entity Framework"],
-      gradient: "from-green-500 to-emerald-500",
-      icon: "🏨",
-    },
-    {
-      title: "Chirayu",
-      description: "Haryana state health scheme updater system - manages insurance, PPP ID, and health user workflows for government healthcare.",
-      tech: [".NET Core", "Angular", "PostgreSQL", "Government APIs"],
+      title: "Portfolio Website",
+      description: "Modern, responsive developer portfolio showcasing projects and skills. Features Bootstrap-based design with integrated contact form, skills visualization, and interactive map sections.",
+      tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       gradient: "from-orange-500 to-red-500",
-      icon: "🏛️",
+      icon: "💼",
     },
   ];
 
