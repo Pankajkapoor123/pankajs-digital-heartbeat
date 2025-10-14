@@ -91,7 +91,9 @@ const AIAssistant = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
       {!isMinimized ? (
-        <div className="relative bg-gradient-to-br from-primary/90 to-secondary/90 backdrop-blur-lg text-white rounded-2xl shadow-[0_0_30px_rgba(0,212,255,0.5)] p-4 max-w-sm animate-scale-in">
+        <div className="relative glass-card neon-border bg-gradient-to-br from-primary/20 to-secondary/20 text-white rounded-2xl p-4 max-w-sm animate-scale-in"
+          style={{ boxShadow: 'var(--shadow-neon)' }}
+        >
           <button
             onClick={() => setIsMinimized(true)}
             className="absolute top-2 right-2 p-1 hover:bg-white/20 rounded-full transition-colors"
@@ -101,7 +103,9 @@ const AIAssistant = () => {
           </button>
           
           <div className="flex items-start gap-3 pr-6">
-            <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
+            <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center animate-pulse"
+              style={{ boxShadow: '0 0 15px hsl(var(--primary) / 0.5)' }}
+            >
               <span className="text-2xl">🤖</span>
             </div>
             <p className="text-sm leading-relaxed pt-1">{message}</p>
@@ -110,7 +114,8 @@ const AIAssistant = () => {
       ) : (
         <button
           onClick={() => setIsMinimized(false)}
-          className="group relative w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full shadow-[0_0_30px_rgba(0,212,255,0.5)] flex items-center justify-center animate-pulse hover:scale-110 transition-transform"
+          className="group relative w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full neon-border flex items-center justify-center animate-pulse hover:scale-110 transition-transform"
+          style={{ boxShadow: 'var(--shadow-neon)' }}
           aria-label="Open assistant"
         >
           <MessageCircle className="h-8 w-8 text-white" />
