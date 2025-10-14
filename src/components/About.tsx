@@ -37,6 +37,12 @@ const About = () => {
               solutions</span> that solve real-world problems. I believe in continuous learning and staying updated 
               with the latest technologies to deliver the best results.
             </p>
+
+            <div className="relative mt-8 p-6 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
+              <p className="text-xl text-primary font-semibold italic">
+                "I solve problems not because I have to, but because the bug reports are getting boring. Clean code is my superpower."
+              </p>
+            </div>
           </div>
         </div>
       </div>

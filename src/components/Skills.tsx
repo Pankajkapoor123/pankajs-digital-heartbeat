@@ -27,20 +27,24 @@ const Skills = () => {
             </p>
           </div>
 
-          {/* Skills Grid */}
+          {/* Neon Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group relative bg-card border border-border rounded-xl p-6 hover:border-primary transition-all duration-300 overflow-hidden card-hover"
+                className="group relative skill-card-3d bg-card/50 backdrop-blur-sm border-2 border-primary/20 rounded-xl p-6 hover:border-primary cursor-pointer overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.classList.add('plasma-pulse');
+                  setTimeout(() => e.currentTarget.classList.remove('plasma-pulse'), 1000);
+                }}
               >
-                {/* Gradient overlay on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
+                {/* Neon glow background */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl`} />
                 
                 <div className="relative z-10 text-center space-y-3">
                   {/* Icon */}
-                  <div className="text-5xl group-hover:scale-110 transition-transform duration-300 animate-glow">
+                  <div className="text-5xl group-hover:scale-125 group-hover:drop-shadow-[0_0_15px_rgba(0,212,255,0.8)] transition-all duration-300">
                     {skill.icon}
                   </div>
                   
@@ -50,10 +54,8 @@ const Skills = () => {
                   </p>
                 </div>
 
-                {/* Shine effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-                </div>
+                {/* Holographic shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/30 to-transparent -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
               </div>
             ))}
           </div>

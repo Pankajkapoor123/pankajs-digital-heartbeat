@@ -47,8 +47,8 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Designing and developing <span className="text-primary font-semibold">scalable web applications</span> with 
-            .NET Core, Angular, and SqlServer.
+            I debug the universe with <span className="text-primary font-semibold">.NET Core</span> and craft 
+            UI magic with <span className="text-primary font-semibold">Angular</span>. Welcome to my full-stack lab 🧪
           </p>
 
           {/* Location & Stats */}
@@ -71,7 +71,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all glow-effect text-lg px-8"
+              className="bg-gradient-to-r from-primary via-secondary to-primary gradient-pulse hover:opacity-90 transition-all glow-effect text-lg px-8 animate-glow"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               See My Work
@@ -80,7 +80,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 text-lg px-8"
+              className="border-primary text-primary hover:bg-primary/10 text-lg px-8 hover:shadow-[0_0_20px_rgba(0,212,255,0.5)] transition-all"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Let's Talk 💬

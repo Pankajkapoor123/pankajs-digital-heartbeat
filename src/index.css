@@ -133,8 +133,12 @@ All colors MUST be HSL.
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%, 100% {
+      transform: translateY(0px) rotateY(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotateY(180deg);
+    }
   }
 
   .animate-glow {
@@ -144,5 +148,53 @@ All colors MUST be HSL.
   @keyframes glow {
     from { filter: drop-shadow(0 0 5px hsl(var(--primary) / 0.5)); }
     to { filter: drop-shadow(0 0 20px hsl(var(--primary) / 0.8)); }
+  }
+
+  @keyframes gradient-pulse {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes plasma-pulse {
+    0% {
+      box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px hsl(var(--primary) / 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 hsl(var(--primary) / 0);
+    }
+  }
+
+  .gradient-pulse {
+    background-size: 200% 200%;
+    animation: gradient-pulse 3s ease infinite;
+  }
+
+  .plasma-pulse {
+    animation: plasma-pulse 1s ease-out;
+  }
+
+  .skill-card-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .skill-card-3d:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+
+  .project-card-3d {
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .project-card-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-5deg) translateY(-10px);
   }
 }

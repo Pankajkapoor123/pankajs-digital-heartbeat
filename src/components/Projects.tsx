@@ -55,7 +55,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="group bg-card border border-border rounded-2xl overflow-hidden hover:border-primary transition-all duration-300 card-hover"
+                className="group project-card-3d bg-card border-2 border-border rounded-2xl overflow-hidden hover:border-primary transition-all duration-500 shadow-lg hover:shadow-[0_20px_50px_rgba(0,212,255,0.3)]"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Header */}
