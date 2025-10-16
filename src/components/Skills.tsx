@@ -32,7 +32,7 @@ const Skills = () => {
             {skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group relative skill-card-3d glass-card neon-border rounded-xl p-6 cursor-pointer overflow-hidden"
+                className="group relative skill-card-3d glass-card professional-border rounded-xl p-6 cursor-pointer overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onMouseEnter={(e) => {
                   e.currentTarget.classList.add('plasma-pulse');

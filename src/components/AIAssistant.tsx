@@ -91,8 +91,8 @@ const AIAssistant = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
       {!isMinimized ? (
-        <div className="relative glass-card neon-border bg-gradient-to-br from-primary/20 to-secondary/20 text-white rounded-2xl p-4 max-w-sm animate-scale-in"
-          style={{ boxShadow: 'var(--shadow-neon)' }}
+        <div className="relative glass-card professional-border bg-gradient-to-br from-primary/20 to-secondary/20 text-foreground rounded-2xl p-4 max-w-sm animate-scale-in"
+          style={{ boxShadow: 'var(--shadow-professional)' }}
         >
           <button
             onClick={() => setIsMinimized(true)}
@@ -114,8 +114,8 @@ const AIAssistant = () => {
       ) : (
         <button
           onClick={() => setIsMinimized(false)}
-          className="group relative w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full neon-border flex items-center justify-center animate-pulse hover:scale-110 transition-transform"
-          style={{ boxShadow: 'var(--shadow-neon)' }}
+          className="group relative w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full professional-border flex items-center justify-center animate-pulse hover:scale-110 transition-transform"
+          style={{ boxShadow: 'var(--shadow-professional)' }}
           aria-label="Open assistant"
         >
           <MessageCircle className="h-8 w-8 text-white" />

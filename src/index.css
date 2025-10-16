@@ -8,41 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    --background: 192 15% 94%;
+    --foreground: 210 29% 24%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 24%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 24%;
 
-    --primary: 193 100% 50%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 204 70% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 300 100% 70%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 29% 24%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 192 15% 94%;
+    --muted-foreground: 204 8% 76%;
 
-    --accent: 328 86% 70%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 204 70% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 193 100% 50%;
+    --border: 204 8% 76%;
+    --input: 0 0% 100%;
+    --ring: 204 70% 53%;
 
     --radius: 0.75rem;
     
-    --gradient-primary: linear-gradient(135deg, hsl(193 100% 50%), hsl(300 100% 70%));
-    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(193 100% 50% / 0.15), transparent 70%);
-    --shadow-neon: 0 0 20px hsl(193 100% 50% / 0.5), 0 0 60px hsl(193 100% 50% / 0.2);
-    --shadow-neon-purple: 0 0 20px hsl(300 100% 70% / 0.5), 0 0 60px hsl(300 100% 70% / 0.2);
-    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.8);
+    --gradient-primary: linear-gradient(135deg, hsl(204 70% 53%), hsl(210 29% 24%));
+    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(204 70% 53% / 0.15), transparent 70%);
+    --shadow-professional: 0 4px 12px hsl(210 29% 24% / 0.15);
+    --shadow-card: 0 2px 8px hsl(210 29% 24% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -63,33 +62,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    --background: 210 29% 24%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 29% 29%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 29% 29%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 193 100% 50%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 204 70% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 300 100% 70%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 29% 34%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 210 29% 34%;
+    --muted-foreground: 204 8% 76%;
 
-    --accent: 328 86% 70%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 204 70% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 193 100% 50%;
+    --border: 204 8% 76%;
+    --input: 210 29% 34%;
+    --ring: 204 70% 53%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -200,22 +199,22 @@ All colors MUST be HSL.
   }
 
   .glass-card {
-    @apply bg-card/40 backdrop-blur-xl border border-primary/20;
-    box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.1);
+    @apply bg-card backdrop-blur-sm border border-border;
+    box-shadow: var(--shadow-card);
   }
 
   .glass-card:hover {
     @apply border-primary/40;
-    box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.2), 0 0 20px rgba(0, 212, 255, 0.3);
+    box-shadow: var(--shadow-professional);
   }
 
-  .neon-border {
-    border: 1px solid hsl(var(--primary) / 0.3);
-    box-shadow: 0 0 10px hsl(var(--primary) / 0.2), inset 0 0 10px hsl(var(--primary) / 0.1);
+  .professional-border {
+    border: 1px solid hsl(var(--border));
+    box-shadow: var(--shadow-card);
   }
 
-  .neon-border:hover {
-    border-color: hsl(var(--primary) / 0.6);
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), inset 0 0 15px hsl(var(--primary) / 0.2);
+  .professional-border:hover {
+    border-color: hsl(var(--primary));
+    box-shadow: var(--shadow-professional);
   }
 }

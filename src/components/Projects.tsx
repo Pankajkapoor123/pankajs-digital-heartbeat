@@ -55,7 +55,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.title}
-                className="group project-card-3d glass-card neon-border rounded-2xl overflow-hidden transition-all duration-500"
+                className="group project-card-3d glass-card professional-border rounded-2xl overflow-hidden transition-all duration-500"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Project Header */}
