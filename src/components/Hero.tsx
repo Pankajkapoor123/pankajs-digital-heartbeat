@@ -148,7 +148,7 @@ const Hero = () => {
                 {/* Image container */}
                 <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/50 shadow-[0_0_60px_rgba(0,212,255,0.4)] group-hover:shadow-[0_0_80px_rgba(0,212,255,0.6)] transition-all duration-500 group-hover:scale-105">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop" 
+                    src="public\ChatGPT Image Jun 16, 2025, 12_41_36 AM.png"
                     alt="Pankaj Kumar - Professional Portrait"
                     className="w-full h-full object-cover"
                   />
