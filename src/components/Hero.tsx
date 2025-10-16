@@ -36,8 +36,19 @@ const Hero = () => {
       {/* Main content */}
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Professional Image */}
+          <div className="flex justify-center animate-fade-in mb-8">
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary glow-effect">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+                alt="Pankaj Kumar - Professional Portrait"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           {/* Greeting */}
-          <div className="space-y-2 animate-fade-in">
+          <div className="space-y-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <p className="text-primary text-lg font-medium">Hey there! 👋</p>
             <h1 className="text-5xl md:text-7xl font-bold">
               I'm <span className="text-gradient">Pankaj Kumar</span>
@@ -46,13 +57,13 @@ const Hero = () => {
           </div>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.4s' }}>
             I debug the universe with <span className="text-primary font-semibold">.NET Core</span> and craft 
             UI magic with <span className="text-primary font-semibold">Angular</span>. Welcome to my full-stack lab 🧪
           </p>
 
           {/* Location & Stats */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <div className="flex items-center gap-2">
               <span className="text-2xl">📍</span>
               <span>Zirakpur, India 🇮🇳</span>
@@ -68,7 +79,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
             <Button
               size="lg"
               className="bg-gradient-to-r from-primary via-secondary to-primary gradient-pulse hover:opacity-90 transition-all glow-effect text-lg px-8 animate-glow"
@@ -88,7 +99,7 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <div className="flex justify-center gap-4 animate-fade-in" style={{ animationDelay: '1s' }}>
             <a
               href="https://github.com/pankajkumar"
               target="_blank"
