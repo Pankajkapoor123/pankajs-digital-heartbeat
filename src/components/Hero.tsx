@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">💼</span>
-              <span>1.6+ Year Experience</span>
+              <span>2+ Years Experience</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎓</span>
