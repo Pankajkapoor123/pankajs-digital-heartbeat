@@ -32,19 +32,19 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/pankajkumar",
+      url: "https://github.com/Pankajkapoor123",
       color: "from-gray-600 to-gray-800",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/pankajkumar",
+      url: "https://www.linkedin.com/in/pankaj-kumar-63820b29a/",
       color: "from-blue-600 to-blue-800",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:pankaj@example.com",
+      url: "mailto:kp8613765@gmail.com",
       color: "from-red-500 to-pink-600",
     },
   ];
