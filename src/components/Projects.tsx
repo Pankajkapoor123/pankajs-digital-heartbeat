@@ -3,16 +3,16 @@ import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
-      {
+    {
       title: "Medicine Inventory Management System (MIMS)",
-      description: "Enterprise inventory management system built with ASP.NET MVC and .NET Core. Features automated tracking workflows, multi-level approval processes, and role-based access controls. Uses SQL Server and Entity Framework Core for data integrity.",
+      description: "Automated inventory workflows using ASP.NET MVC and SQL Server, eliminating manual paperwork. Implemented multi-level approval hierarchy, role-based access across offices, and centralized inventory tracking for improved data accuracy.",
       tech: ["ASP.NET MVC", ".NET Core", "SQL Server", "Entity Framework"],
       gradient: "from-green-500 to-emerald-500",
       icon: "💊",
     },
     {
       title: "Hospital Management System (HIMS)",
-      description: "Comprehensive hospital management system with .NET Core backend and Angular frontend. Handles patient records, prescriptions, vitals, diagnosis, and staff management. Features ABHA-compliant solutions (M1, M2, M3) for efficient workflows and inter-department communication.",
+      description: "Comprehensive hospital system with .NET Core backend and Angular frontend. Handles patient records, prescriptions, vitals, diagnosis, discharge summaries, and staff management. Integrated ABHA-compliant solutions (M1, M2, M3) for efficient workflows.",
       tech: [".NET Core", "Angular", "Entity Framework", "ABHA API"],
       gradient: "from-blue-500 to-cyan-500",
       icon: "🏥",
@@ -24,15 +24,20 @@ const Projects = () => {
       gradient: "from-purple-500 to-pink-500",
       icon: "🤖",
     },
-  
+    {
+      title: "Authentiko (Secure File, Payment & Transport Management)",
+      description: "Resolved unauthorized access and data leakage with role-based authentication and encrypted transport-level security. Introduced encrypted SFTP transfers and AWS S3 storage. Built integrated Transport Management System for vehicles, routes, and logistics.",
+      tech: [".NET Core", "AWS S3", "SFTP", "Role-Based Auth"],
+      gradient: "from-amber-500 to-orange-500",
+      icon: "🔐",
+    },
     {
       title: "E-commerce Platform",
-      description: "Full-featured e-commerce website using ASP.NET Core MVC and Entity Framework. Integrated payment gateways, product management, user authentication, and order management with optimized database queries for improved performance.",
+      description: "Full-featured e-commerce website using ASP.NET Core MVC and Entity Framework. Integrated payment gateways, product management, user authentication, and order management with optimized database queries.",
       tech: ["ASP.NET Core", "MVC", "Entity Framework", "Payment Gateway"],
       gradient: "from-orange-500 to-red-500",
       icon: "🛒",
     },
-  
   ];
 
   return (
