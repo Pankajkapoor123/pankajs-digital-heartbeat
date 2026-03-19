@@ -22,7 +22,7 @@ const AIAssistant = () => {
     }, 2000);
 
     // Idle detection
-    let idleTimer: NodeJS.Timeout;
+    let idleTimer: ReturnType<typeof setTimeout>;
     const resetIdleTimer = () => {
       clearTimeout(idleTimer);
       idleTimer = setTimeout(() => {

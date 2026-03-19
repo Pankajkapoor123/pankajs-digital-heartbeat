@@ -67,9 +67,9 @@ const Skills = () => {
           {/* Additional Skills */}
           <div className="mt-12 text-center">
             <p className="text-muted-foreground">
-              Also familiar with:{" "}
+              Also experienced with:{" "}
               <span className="text-primary font-semibold">
-                ASP.NET MVC, SQL Server, JWT Authentication, SOAP Web Services, Role-based Access, ABHA/NDHM API Integration
+                JWT Authentication, SFTP, CloudFront, SQS, Role-based Access Control, ABHA/NDHM API Integration, API Documentation
               </span>
             </p>
           </div>
