@@ -32,19 +32,19 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/pankajkumar",
+      url: "https://github.com/Pankajkapoor123",
       color: "from-gray-600 to-gray-800",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/pankajkumar",
+      url: "https://www.linkedin.com/in/pankaj-kumar-63820b29a/",
       color: "from-blue-600 to-blue-800",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:pankaj@example.com",
+      url: "mailto:kp8613765@gmail.com",
       color: "from-red-500 to-pink-600",
     },
   ];
@@ -146,8 +146,8 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:pankaj@example.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                        pankaj@example.com
+                      <a href="mailto:kp8613765@gmail.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                        kp8613765@gmail.com
                       </a>
                     </div>
                   </div>
