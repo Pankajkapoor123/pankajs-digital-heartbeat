@@ -1,14 +1,18 @@
 const Skills = () => {
   const skills = [
-    { name: ".NET Core", icon: "💠", color: "from-purple-500 to-blue-500" },
     { name: "C#", icon: "🔷", color: "from-blue-500 to-cyan-500" },
-    { name: "Angular", icon: "🅰️", color: "from-red-500 to-pink-500" },
-    { name: "PostgreSQL", icon: "🐘", color: "from-blue-400 to-blue-600" },
-    { name: "TypeScript", icon: "📘", color: "from-blue-600 to-indigo-600" },
+    { name: ".NET Core", icon: "💠", color: "from-purple-500 to-blue-500" },
+    { name: "ASP.NET MVC", icon: "🏗️", color: "from-indigo-500 to-blue-500" },
     { name: "Entity Framework", icon: "🔗", color: "from-purple-600 to-indigo-600" },
+    { name: "Angular", icon: "🅰️", color: "from-red-500 to-pink-500" },
+    { name: "TypeScript", icon: "📘", color: "from-blue-600 to-indigo-600" },
+    { name: "HTML/CSS", icon: "🎨", color: "from-orange-500 to-pink-500" },
+    { name: "SQL Server", icon: "🗄️", color: "from-red-600 to-orange-500" },
+    { name: "PostgreSQL", icon: "🐘", color: "from-blue-400 to-blue-600" },
     { name: "REST APIs", icon: "🔌", color: "from-green-500 to-emerald-500" },
-    { name: "GitHub", icon: "🔀", color: "from-orange-500 to-red-500" },
-    { name: "Visual Studio", icon: "💻", color: "from-indigo-500 to-purple-500" },
+    { name: "AWS S3", icon: "☁️", color: "from-yellow-500 to-orange-500" },
+    { name: "Git", icon: "🔀", color: "from-orange-500 to-red-500" },
+    { name: "Swagger", icon: "📋", color: "from-green-400 to-green-600" },
     { name: "Postman", icon: "📮", color: "from-orange-400 to-orange-600" },
   ];
 
